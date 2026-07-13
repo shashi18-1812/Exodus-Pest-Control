@@ -1,0 +1,551 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111827;
+    background:#ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    background:#111827;
+    color:white;
+
+    padding:12px 12%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:14px;
+}
+
+.background-text{
+    position:fixed;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:12rem;
+    font-weight:900;
+
+    color:rgba(227,6,19,0.05);
+
+    letter-spacing:15px;
+
+    user-select:none;
+    pointer-events:none;
+
+    z-index:-1;
+
+    white-space:nowrap;
+}
+
+
+/* NAVBAR */
+
+header{
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:1000;
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 12%;
+}
+
+.logo img{
+    width:120px;
+}
+
+.nav-links{
+    display:flex;
+    gap:36px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#e30613;
+}
+
+.nav-links a.active{
+
+    color:#d50018;
+
+    background:#ffe9ea;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+}
+
+.call-btn{
+    
+
+    background:#e30613;
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 25px;
+
+    border-radius:40px;
+
+    font-weight:600;
+}
+
+
+
+.services{
+
+    background:#fffaf9;
+
+    padding:110px 0;
+}
+
+.container{
+
+    width:min(1450px,90%);
+
+    margin:auto;
+}
+
+.section-heading{
+
+    max-width:1050px;
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#fde6e8;
+
+    color:#e30613;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+
+    margin-top:28px;
+
+    font-size:72px;
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    color:#111827;
+
+    letter-spacing:-2px;
+}
+
+.section-heading p{
+
+    margin-top:28px;
+
+    max-width:900px;
+
+    font-size:24px;
+
+    line-height:1.6;
+
+    color:#4b5563;
+}
+
+@media(max-width:992px){
+
+    .services{
+
+        padding:80px 0;
+    }
+
+    .section-heading h2{
+
+        font-size:48px;
+    }
+
+    .section-heading p{
+
+        font-size:20px;
+    }
+
+}
+
+.services-grid{
+
+    max-width: 1400px;
+
+    margin: 80px auto;
+
+    padding: 0 30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+}
+
+.service-card{
+
+    background:#fff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:42px ;
+
+    transition:.35s ease;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.card-tag{
+
+    display:inline-block;
+
+    background:#fde7ea;
+
+    color:#e30613;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.service-card h3{
+
+    margin-top:28px;
+
+    font-size:44px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    line-height:1.2;
+}
+
+.service-card p{
+
+    margin-top:22px;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    color:#4b5563;
+}
+
+.service-list{
+
+    margin-top:34px;
+
+    list-style:none;
+}
+
+.service-list li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+    color:#111827;
+}
+
+.service-list i{
+
+    color:#e30613;
+
+    font-size:20px;
+}
+
+.card-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:38px;
+}
+
+.btn-red{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#e30613;
+
+    color:#fff;
+
+    padding:18px 30px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-red:hover{
+
+    background:#c70010;
+}
+
+.btn-white{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+    border-radius:999px;
+
+    border:1px solid #d1d5db;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-white:hover{
+
+    background:#f8f8f8;
+}
+
+@media(max-width:992px){
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.service-card{
+
+padding:30px;
+
+}
+
+.service-card h3{
+
+font-size:34px;
+
+}
+
+.service-card p{
+
+font-size:18px;
+
+}
+
+}
+
+
+.service-card{
+
+    transition:.35s ease;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+
+.btn-red:hover{
+
+    background:#c70010;
+
+    transform:translateY(-2px);
+}
+
+.btn-white:hover{
+
+    background:#f8f8f8;
+
+    border-color:#bdbdbd;
+}
+
+.btn-red i{
+
+    font-size:18px;
+}
+
+.service-list i{
+
+    color:#e30613;
+
+    font-size:18px;
+}
+
+.services-grid{
+
+    margin-top:40px;
+}
+
+footer{
+
+    background:#f8f8f8;
+
+    margin-top:10px;
+}
+
+.footer-grid{
+
+    padding:80px 12%;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:80px;
+}
+
+.footer-grid img{
+
+    width:150px;
+    margin-bottom:10px;
+}
+
+.footer-grid p{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#444;
+
+    line-height:1;
+}
+
+.footer-grid a{
+     display:block;
+
+    text-decoration:none;
+
+    color:#444;
+
+    line-height:1.8;
+}
+
+.footer-grid h3{
+
+    margin-bottom:6px;
+}
+
+.copyright{
+
+    text-align:center;
+
+    padding:25px;
+
+    border-top:1px solid #ddd;
+}
+
+.whatsapp,
+.floating-call,.instagram{
+
+    position:fixed;
+    right:20px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+    z-index:999;
+}
+
+.whatsapp{
+
+    bottom:110px;
+    background:#25d366;
+}
+
+.floating-call{
+
+    bottom:30px;
+    background:#e30613;
+}
+
+.instagram{
+
+    bottom:190px;
+    background:#E4405F;
+}
